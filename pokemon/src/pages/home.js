@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import CardImage from '../render';
 import GetData from '../services/fetch';
-import Nav from '../components/nav'
+import Nav from '../components/nav';
 
 
 export default () => {
+ 
   const [d, gd] = useState([]);
   GetData().then(({ cards }) => gd(<CardImage cards={cards} />));
   return (

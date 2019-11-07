@@ -10,9 +10,10 @@ class CardImage extends React.Component {
       cardName : [],
       textSearch : ''
     }
-    console.log(props.cards)
-    this.filtrado = this.filtrado.bind(this)
+    console.log(this.cards)
+    this.filtrado = this.filtrado.bind(this);
   }
+
 
   filtrado(e) {
     const text = e.target.value;
@@ -22,7 +23,6 @@ class CardImage extends React.Component {
       return itemData.indexOf(textData) > -1
     })
 
-    console.log(newData)
     this.setState({
       cardName: newData,
       textSearch: text,
@@ -30,10 +30,15 @@ class CardImage extends React.Component {
   }
 
   render() {
+    const arrayMatch = this.state.cardName;
+    const arrayAll = this.cards
     return(
       <div>
         <Search value={this.state.text} onChange={this.filtrado} />
-        {this.cards.map(c => <ImageCard card={c}/>) }
+        {
+          arrayMatch.length ? arrayMatch.map(c => <ImageCard  card={c} />) : 
+          arrayAll.map(c => <ImageCard  card={c} />)
+        }
       </div>
     )
   }
