@@ -7,5 +7,4 @@ function GetData() {
       });
   }) 
 }
-
 export default GetData;

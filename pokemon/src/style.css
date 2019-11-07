@@ -1,3 +1,65 @@
+.btn-s {
+  background: transparent  url('./img/NoFa.svg') no-repeat ;
+  border: 0;
+  height: 30px;
+  width: 30px;
+}
+
+.btn-search {
+  background-color: #FF7F50;
+  border: 0;
+  border-radius: 5px;
+  color: #160560;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.card-title {
+  color: #160560;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 .img-space {
-  padding: 2%;
+  color: transparent;
+  cursor: pointer;
+  border: 0;
+  margin: 2%;
+}
+
+.nav {
+  background-color: #160560;
+  padding-bottom: 30px;
+}
+
+.nav-link {
+  color: #FF7F50;
+  font-size: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.search {
+  background-color: transparent;
+  border: 1px solid #FF7F50;
+  border-radius: 30px;
+  color: #FF7F50;
+  font-size: 16px;
+  margin:20px 10px 0px 10px;
+  padding: 5px;
+}
+
+.title {
+  background-color: #160560;
+  color: #FF7F50 ;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.wapper-card {
+  display: inline-block;
+  text-align: center;
 }

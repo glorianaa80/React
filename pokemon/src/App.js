@@ -1,13 +1,18 @@
-import React, {useState} from 'react';
-import CardImage from './render';
-import GetData from './services/fetch';
+import React from 'react';
+import Home from './pages/home'
+import Fav from './pages/favorites';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 
 function App() {
-  const [d, gd] = useState([]);
-  GetData().then(({cards}) => gd(<CardImage cards={cards}/>));
   return (
     <div className="App">
-      {d}
+      <BrowserRouter>
+      <Switch>
+        <Route path={"/"} component={Home} exact />
+        <Route path={"/favorites"} component={Fav} />
+      </Switch>
+    </BrowserRouter>
     </div>
   );
 }
