@@ -6,6 +6,9 @@ export default () => {
     <div>
       <h1  className='title'>Favorites</h1>
       <Nav />
+      <div>
+        
+      </div>
     </div>
   )
 }

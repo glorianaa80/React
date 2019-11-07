@@ -4,7 +4,6 @@ import '.././style.css';
 function Start(){
   return(
     <button className="btn-s">
-      <img className="hola"alt="" />
     </button>
   )
 }
